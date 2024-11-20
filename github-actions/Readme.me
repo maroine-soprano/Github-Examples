@@ -10,7 +10,7 @@ echo '{"name":"mona", "greeting":"hello"}' | gh workflow run greet.yml --json
 ```sh
 curl -X POST \
 -H "Accept: application/vnd.github+json" \
--H "Authorization: token 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" \
+-H "Authorization: token {PAT} \
 -d '{"event_type": "webhook", "client_payload": {"key": "value"} }' \
-https://api.github.com/repos/maroine-soprano/Github-Examples/dispatches
+https://api.github.com/repos/{owner}/{repo}/dispatches
 ```
