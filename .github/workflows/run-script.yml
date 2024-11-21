@@ -1,0 +1,12 @@
+name: run-script
+on: ['push']
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        defaults:
+            run:
+                working-directory: ./scripts
+        steps:
+        - name: run script
+          run: /script.sh
