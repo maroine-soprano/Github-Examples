@@ -9,4 +9,4 @@ jobs:
                 working-directory: ./scripts
         steps:
         - name: run script
-          run: /script.sh
+          run: script.sh
