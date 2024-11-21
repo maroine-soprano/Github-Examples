@@ -1,0 +1,10 @@
+name: workflow-contaxt
+on: ["push"]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: action context
+        env:
+          GITHUB_CONTEXT: ${{ github.action }}
+        run: echo $GITHUB_CONTEXT
