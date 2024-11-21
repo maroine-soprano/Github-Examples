@@ -1,15 +1,15 @@
 name: Maroine Action
-on: ['workflow_dispatch']
+on: ['workflow_dispatch','push']
 
 jobs:
   say_hello:
     runs-on: ubuntu-latest
     steps:
       - name: Hello world action step
-        id: hello
+        id: sqdqsdqsd
         uses: maroine-soprano/my-action@v1.1
         with:
           fullname: "maroine khallouqsdqs"
       # Use the output from the `hello` step
       - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.hello-description }}"
+        run: echo "The time was ${{ steps.sqdqsdqsd.outputs.hello-description }}"
