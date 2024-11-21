@@ -5,8 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: add val
-        run: |
-        echo "KEY: value" >> $GITHUB_ENV
+        run: echo "KEY= value" >> $GITHUB_ENV
       - name: red val
         run: |
           echo $KEY
