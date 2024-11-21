@@ -1,0 +1,15 @@
+name: Maroine Action
+on: [push]
+
+jobs:
+  say_hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello world action step
+        id: hello
+        uses: maroine-soprano/my-action@v1.1
+        with:
+          fullname: "maroine khallou"
+      # Use the output from the `hello` step
+      - name: Get the output time
+        run: echo "The time was ${{ steps.hello.outputs.hello-description }}"
