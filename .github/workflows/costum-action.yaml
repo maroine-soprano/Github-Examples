@@ -1,5 +1,5 @@
 name: Maroine Action
-on: [push]
+on: ['workflow_dispatch']
 
 jobs:
   say_hello:
