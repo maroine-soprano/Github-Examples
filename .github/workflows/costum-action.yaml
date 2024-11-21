@@ -9,7 +9,7 @@ jobs:
         id: hello
         uses: maroine-soprano/my-action@v1.1
         with:
-          fullname: "maroine khallou"
+          fullname: "maroine khallouqsd"
       # Use the output from the `hello` step
       - name: Get the output time
         run: echo "The time was ${{ steps.hello.outputs.hello-description }}"
